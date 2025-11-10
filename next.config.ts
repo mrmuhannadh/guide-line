@@ -25,7 +25,6 @@ const nextConfig: NextConfig = {
 
 const withNextra = nextra({
   // ... Other Nextra config options
-  themeConfig: './theme.config.tsx',
   unstable_shouldAddLocaleToLinks: true,
 });
 
