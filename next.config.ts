@@ -13,7 +13,7 @@ const nextConfig: NextConfig = {
   env: {
     APP_VERSION: version,
   },
-  basePath: process.env.BASE_PATH,
+  basePath: "/fileserver/user-guide",
   assetPrefix: "/fileserver/user-guide",
   i18n: {
     locales: ['en', 'ar'],
