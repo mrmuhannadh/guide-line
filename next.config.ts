@@ -2,8 +2,6 @@ import type { NextConfig } from 'next';
 import nextra from 'nextra';
 import { version } from './package.json';
 
-const basePath = process.env.BASE_PATH || '';
-
 const nextConfig: NextConfig = {
   /* config options here */
   reactStrictMode: true,
@@ -15,8 +13,8 @@ const nextConfig: NextConfig = {
   env: {
     APP_VERSION: version,
   },
-  basePath,
-  assetPrefix: `${basePath}/`,
+  basePath: process.env.BASE_PATH,
+  assetPrefix: "/fileserver/user-guide",
   i18n: {
     locales: ['en', 'ar'],
     defaultLocale: 'en',
