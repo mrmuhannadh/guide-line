@@ -5,7 +5,6 @@ import { version } from './package.json';
 const nextConfig: NextConfig = {
   /* config options here */
   reactStrictMode: true,
-  output: 'export',
   trailingSlash: true,
   images: {
     unoptimized: true, // mandatory, otherwise won't export
