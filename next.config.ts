@@ -5,6 +5,7 @@ import { version } from './package.json';
 const nextConfig: NextConfig = {
   /* config options here */
   reactStrictMode: true,
+  output: 'export',
   trailingSlash: true,
   images: {
     unoptimized: true, // mandatory, otherwise won't export
@@ -12,8 +13,8 @@ const nextConfig: NextConfig = {
   env: {
     APP_VERSION: version,
   },
-  basePath: "/fileserver/user-guide",
-  assetPrefix: "/fileserver/user-guide",
+  basePath: "",
+  assetPrefix: "",
   i18n: {
     locales: ['en', 'ar'],
     defaultLocale: 'en',
