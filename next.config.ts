@@ -13,8 +13,8 @@ const nextConfig: NextConfig = {
   env: {
     APP_VERSION: version,
   },
-  basePath: "",
-  assetPrefix: "",
+  basePath: "/my-site",
+  assetPrefix: "/my-site",
   i18n: {
     locales: ['en', 'ar'],
     defaultLocale: 'en',
